@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header data-value="X" class="header">
+        <h1>Tic Tac Toe</h1>
+        <div class="top">
+          <label for="playerX">Player X</label>
+          <input type="text" id="playerX" name="playerX" />
+          <label for="playerO">Player O</label>
+          <input type="text" id="playerO" name="playerO" />
+          <button id="savePlayers">Salvar players</button>
+        </div>
+        <div class="top">
+          <label for="vezDeJogar">Vez de jogar</label>
+          <input type="text" id="vezDeJogar" class="vez" disabled />
+        </div>
+      </header>
+
+      <div id="tabuleiro">
+        <button class="campo" disabled id="btn1" value="1"></button>
+        <button class="campo" disabled id="btn2" value="2"></button>
+        <button class="campo" disabled id="btn3" value="3"></button>
+        <button class="campo" disabled id="btn4" value="4"></button>
+        <button class="campo" disabled id="btn5" value="5"></button>
+        <button class="campo" disabled id="btn6" value="6"></button>
+        <button class="campo" disabled id="btn7" value="7"></button>
+        <button class="campo" disabled id="btn8" value="8"></button>
+        <button class="campo" disabled id="btn9" value="9"></button>
+      </div>
+      <button id="reiniciar">Reiniciar jogo</button>
+    </main>
+  </body>
+</html>
